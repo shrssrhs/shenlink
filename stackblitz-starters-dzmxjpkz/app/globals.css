@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Темы */
+.theme-dark {
+  --bg: #0f0f11;
+  --text: #ffffff;
+}
+
+.theme-light {
+  --bg: #f9f9f9;
+  --text: #111111;
+}
+
+.theme-blue {
+  --bg: #0a1e33;
+  --text: #d4eaff;
+}
+
+/* Применение цветов */
+body {
+  @apply bg-skin-base text-skin-base transition-colors duration-300;
+}
+
+html, body, #__next {
+  height: 100%;
+}
